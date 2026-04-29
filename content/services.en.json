@@ -1,0 +1,90 @@
+{
+  "currency": "KRW",
+  "note": "Listed prices are the designer event rate. Final pricing varies by hair length and condition. Confirm on Naver Booking.",
+  "categories": [
+    {
+      "id": "cut",
+      "name": "Cut",
+      "subtitle": "컷",
+      "description": "A composed line that reads your grain and settles into your everyday.",
+      "items": [
+        { "name": "Men's Cut", "subtitle": "Designer event rate", "price": 42000, "featured": true },
+        { "name": "Women's Cut", "subtitle": "Designer event rate", "price": 49000, "featured": true },
+        { "name": "Junior Cut", "price": 35000 }
+      ]
+    },
+    {
+      "id": "perm",
+      "name": "Regular Perm",
+      "subtitle": "일반펌",
+      "description": "Easy to maintain, designed to age gracefully.",
+      "items": [
+        { "name": "Men's Down Perm", "subtitle": "Designer event rate", "price": 48000, "featured": true },
+        { "name": "Men's Regular Perm", "subtitle": "Designer event rate", "price": 126000, "featured": true },
+        { "name": "Women's Bang Perm", "subtitle": "Designer event rate", "price": 64000 },
+        { "name": "Women's Regular Perm", "subtitle": "Designer event rate", "price": 147000 }
+      ]
+    },
+    {
+      "id": "heat-perm",
+      "name": "Heat Perm",
+      "subtitle": "열펌",
+      "description": "Setting · Magic · Iron. Defined texture, with intent.",
+      "items": [
+        { "name": "Men's Volume Magic", "subtitle": "Designer event rate", "price": 175000, "featured": true },
+        { "name": "Women's Setting Perm", "subtitle": "Designer event rate", "price": 231000, "featured": true },
+        { "name": "Men's Iron Perm", "subtitle": "Designer event rate", "price": 175000 },
+        { "name": "Women's Magic Setting", "subtitle": "Designer event rate", "price": 266000 }
+      ]
+    },
+    {
+      "id": "color",
+      "name": "Color",
+      "subtitle": "염색",
+      "description": "Color that suits you like a well-fitted coat — not louder than your tone.",
+      "items": [
+        { "name": "Root Color", "subtitle": "Designer event rate", "price": 120000, "featured": true },
+        { "name": "Women's Full Color", "subtitle": "Designer event rate", "price": 154000, "featured": true },
+        { "name": "Root Bleach", "subtitle": "Designer event rate", "price": 136000 },
+        { "name": "Men's Full Color", "subtitle": "Designer event rate", "price": 154000 },
+        { "name": "Men's Full Bleach", "subtitle": "Designer event rate", "price": 210000 },
+        { "name": "Women's Full Bleach", "subtitle": "Designer event rate", "price": 210000 }
+      ]
+    },
+    {
+      "id": "clinic",
+      "name": "Clinic",
+      "subtitle": "클리닉",
+      "description": "Restoring the natural balance of hair and scalp.",
+      "items": [
+        { "name": "Keratin Clinic", "price": 260000, "featured": true },
+        { "name": "THE Sculpting Scalp Lifting Clinic", "price": 220000 }
+      ]
+    },
+    {
+      "id": "styling",
+      "name": "Styling",
+      "subtitle": "스타일링",
+      "description": "A finishing touch — or a light brush before you leave.",
+      "items": [
+        { "name": "Men's Styling", "subtitle": "Designer rate", "price": 40000, "featured": true },
+        { "name": "Women's Styling", "subtitle": "Designer rate", "price": 50000, "featured": true },
+        { "name": "Up Style", "subtitle": "Designer rate", "price": 90000, "featured": true },
+        { "name": "Semi Up Style", "price": 110000 },
+        { "name": "Shampoo", "price": 25000 }
+      ]
+    },
+    {
+      "id": "makeup",
+      "name": "Makeup",
+      "subtitle": "메이크업",
+      "description": "Daily · Occasion · Wedding. Makeup tailored to time and mood.",
+      "inquireOnly": true,
+      "items": [
+        { "name": "Mood Makeup", "subtitle": "Daily · everyday" },
+        { "name": "Occasion Makeup", "subtitle": "Events · shoots · broadcast" },
+        { "name": "Wedding Makeup", "subtitle": "Ceremony · shoot · dress tour" }
+      ]
+    }
+  ]
+}

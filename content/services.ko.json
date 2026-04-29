@@ -1,0 +1,90 @@
+{
+  "currency": "KRW",
+  "note": "표시된 가격은 디자이너 이벤트가 기준이며, 모발 길이·상태에 따라 변동될 수 있습니다. 정확한 가격은 네이버 예약에서 확인해 주세요.",
+  "categories": [
+    {
+      "id": "cut",
+      "name": "컷",
+      "subtitle": "Cut",
+      "description": "결을 읽고, 일상에 자연스럽게 스며드는 단정한 라인.",
+      "items": [
+        { "name": "남성컷", "subtitle": "디자이너 이벤트가", "price": 42000, "featured": true },
+        { "name": "여성컷", "subtitle": "디자이너 이벤트가", "price": 49000, "featured": true },
+        { "name": "주니어컷", "price": 35000 }
+      ]
+    },
+    {
+      "id": "perm",
+      "name": "일반펌",
+      "subtitle": "Regular Perm",
+      "description": "유지하기 쉬우면서도 시간이 지나도 결이 흐트러지지 않는 펌.",
+      "items": [
+        { "name": "남성 다운펌", "subtitle": "디자이너 이벤트가", "price": 48000, "featured": true },
+        { "name": "남성 일반펌", "subtitle": "디자이너 이벤트가", "price": 126000, "featured": true },
+        { "name": "여성 앞머리펌", "subtitle": "디자이너 이벤트가", "price": 64000 },
+        { "name": "여성 일반펌", "subtitle": "디자이너 이벤트가", "price": 147000 }
+      ]
+    },
+    {
+      "id": "heat-perm",
+      "name": "열펌",
+      "subtitle": "Heat Perm",
+      "description": "셋팅·매직·아이롱. 또렷한 텍스처로 완성하는 시술.",
+      "items": [
+        { "name": "남성 볼륨매직", "subtitle": "디자이너 이벤트가", "price": 175000, "featured": true },
+        { "name": "여성 셋팅펌", "subtitle": "디자이너 이벤트가", "price": 231000, "featured": true },
+        { "name": "남성 아이롱펌", "subtitle": "디자이너 이벤트가", "price": 175000 },
+        { "name": "여성 매직셋팅", "subtitle": "디자이너 이벤트가", "price": 266000 }
+      ]
+    },
+    {
+      "id": "color",
+      "name": "염색",
+      "subtitle": "Color",
+      "description": "본래 톤을 흐리지 않는, 옷처럼 어울리는 컬러.",
+      "items": [
+        { "name": "뿌리염색", "subtitle": "디자이너 이벤트가", "price": 120000, "featured": true },
+        { "name": "여성 전체염색", "subtitle": "디자이너 이벤트가", "price": 154000, "featured": true },
+        { "name": "뿌리탈색", "subtitle": "디자이너 이벤트가", "price": 136000 },
+        { "name": "남성 전체염색", "subtitle": "디자이너 이벤트가", "price": 154000 },
+        { "name": "남성 전체탈색", "subtitle": "디자이너 이벤트가", "price": 210000 },
+        { "name": "여성 전체탈색", "subtitle": "디자이너 이벤트가", "price": 210000 }
+      ]
+    },
+    {
+      "id": "clinic",
+      "name": "클리닉",
+      "subtitle": "Clinic",
+      "description": "모발과 두피 본연의 균형을 다시 잡는 케어.",
+      "items": [
+        { "name": "케라틴 클리닉", "price": 260000, "featured": true },
+        { "name": "THE 조각 두피 리프팅 클리닉", "price": 220000 }
+      ]
+    },
+    {
+      "id": "styling",
+      "name": "스타일링 · 기타",
+      "subtitle": "Styling",
+      "description": "방문 그대로의 마무리, 또는 가벼운 손질.",
+      "items": [
+        { "name": "남성 스타일링", "subtitle": "디자이너 가격", "price": 40000, "featured": true },
+        { "name": "여성 스타일링", "subtitle": "디자이너 가격", "price": 50000, "featured": true },
+        { "name": "UP STYLE", "subtitle": "디자이너 가격", "price": 90000, "featured": true },
+        { "name": "세미 업스타일", "price": 110000 },
+        { "name": "샴푸", "price": 25000 }
+      ]
+    },
+    {
+      "id": "makeup",
+      "name": "메이크업",
+      "subtitle": "Makeup",
+      "description": "Daily · Occasion · Wedding. 일정과 분위기에 맞는 메이크업.",
+      "inquireOnly": true,
+      "items": [
+        { "name": "Mood Makeup", "subtitle": "Daily · 출퇴근·일상" },
+        { "name": "Occasion Makeup", "subtitle": "행사·촬영·아나운서" },
+        { "name": "Wedding Makeup", "subtitle": "본식·촬영·드레스 투어" }
+      ]
+    }
+  ]
+}

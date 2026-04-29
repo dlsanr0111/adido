@@ -1,0 +1,118 @@
+{
+  "nav": {
+    "about": "About",
+    "prices": "Price",
+    "designers": "Designers",
+    "gallery": "Gallery",
+    "events": "Event",
+    "reviews": "Reviews",
+    "notice": "Notice",
+    "contact": "Visit"
+  },
+  "actions": {
+    "book": "예약하기",
+    "bookOnNaver": "예약하기",
+    "viewMore": "더 보기",
+    "readMore": "이어 읽기",
+    "back": "돌아가기",
+    "callNow": "전화로 문의"
+  },
+  "home": {
+    "eyebrow": "Cheongdam · Hair & Make Up",
+    "heroTitle": "Artist DId. DO",
+    "heroLead": "아디도는 처음 시작했던 마음 그대로,\n아티스트의 시각으로 바라보는 아름다움과 멋, 그리고 세련됨을 추구하는 청담동 뷰티 살롱입니다.",
+    "introEyebrow": "About ADido",
+    "introTitle": "Artist DId. DO",
+    "introBody": "대문자를 모으면 ADIDO. 처음 시작했던 마음 그대로, 아티스트의 시각으로 바라보는 아름다움과 멋, 그리고 편안함을 추구합니다. 청담동 한 켠에서 당신의 일상에 자연스럽게 스며드는 결을 디자인합니다.",
+    "signatureEyebrow": "Preview",
+    "signatureTitle": "아디도 갤러리 미리보기",
+    "ctaEyebrow": "Visit",
+    "ctaTitle": "고객님의 최고의 순간을 만들어나갑니다.",
+    "ctaBody": "예약은 네이버를 통해, 문의는 전화 또는 카카오톡으로."
+  },
+  "prices": {
+    "eyebrow": "Price",
+    "title": "시술과 가격",
+    "lead": "유행을 좇기보다, 결을 읽는 디자인. 모든 가격은 디자이너 이벤트가 기준입니다.",
+    "featuredBadge": "대표",
+    "inquireValue": "별도 문의",
+    "ctaTitle": "원하는 시술을\n예약으로 이어 보세요.",
+    "ctaBody": "디자이너별 가격은 예약 페이지에서 정확하게 확인하실 수 있습니다."
+  },
+  "designers": {
+    "eyebrow": "Stylists",
+    "title": "디자이너",
+    "lead": "당신의 일상에 잘 어울리는 디자인을 찾는, 16인의 손길.",
+    "bookCta": "예약하기",
+    "instagramCta": "Instagram",
+    "backToList": "디자이너 전체 보기",
+    "groups": {
+      "Executive Director": "이사",
+      "Senior Director": "부원장",
+      "Director": "원장",
+      "Director · Makeup": "원장 · 메이크업",
+      "Manager": "실장",
+      "Designer": "디자이너"
+    }
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "ADido를 믿고 찾아주신 당신에게.",
+    "lead": "ADido는 당신에게 가장 잘 맞는 스타일을 찾고, 당신이 빛날 수 있는 디자인을 선물해드리고 있습니다.",
+    "section1Title": "les grands trans-parents",
+    "section1Body": "큰 투명함이라는 그 이름처럼, 당신의 본래 결을 흐리지 않으면서 가장 세련된 형태를 분석합니다. 스튜디오 조명, 의자에 앉는 순간의 호흡, 거리에 나설 때의 모습까지 — 살롱이라는 작은 공간 속에서 모든 단계를 설계하고 적용합니다.",
+    "section2Title": "충분한 상담을 통한 화려한 변화",
+    "section2Body": "얼굴형과 두상, 모질과 모량, 옷을 입는 스타일과 생활 패턴. 디자이너 한 사람 한 사람이 시술 전 충분한 시간을 들여 당신을 읽습니다. 그리고 ‘오직 당신만을 위한’ 디자인을 제안합니다.",
+    "section3Title": "당신의 새로운 페이지를 펼쳐보세요.",
+    "section3Body": "강남 도산대로 421, JS빌딩 3층. 최고의 디자이너들로 이루어진 한 폭의 그림 같은 ADido에서, 당신의 다음 페이지를 함께 펼칩니다."
+  },
+  "gallery": {
+    "eyebrow": "Gallery",
+    "title": "공간과 작업물",
+    "lead": "잘 정돈된 인테리어와 작업물을 한자리에서."
+  },
+  "contact": {
+    "eyebrow": "Visit",
+    "title": "오시는 길",
+    "lead": "도산대로 421, JS빌딩 3층. 도보 또는 발렛으로 편하게 오실 수 있습니다.",
+    "addressLabel": "주소",
+    "phoneLabel": "전화",
+    "hoursLabel": "영업시간",
+    "bookLabel": "예약",
+    "naverMap": "네이버 지도에서 보기"
+  },
+  "notice": {
+    "eyebrow": "Notice",
+    "title": "공지사항",
+    "lead": "휴무, 이벤트, 가격 변동 안내가 이곳에 정리됩니다.",
+    "empty": "현재 공지된 사항이 없습니다."
+  },
+  "reviews": {
+    "eyebrow": "Reviews",
+    "title": "후기",
+    "lead": "고객님들이 남겨 주신 솔직한 기록.",
+    "naverPlaceCta": "네이버 플레이스 후기 전체 보기",
+    "instagramCta": "Instagram에서 보기"
+  },
+  "common": {
+    "menu": "메뉴",
+    "closeMenu": "메뉴 닫기",
+    "openMenu": "메뉴 열기",
+    "skipToContent": "본문으로 건너뛰기",
+    "notFoundEyebrow": "404",
+    "notFoundTitle": "찾으시는 페이지를\n발견하지 못했습니다.",
+    "notFoundBody": "주소를 다시 한 번 확인해 주시거나, 메인으로 돌아가 주세요.",
+    "backToHome": "메인으로"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "address": "주소",
+    "phone": "전화",
+    "hours": "영업시간",
+    "follow": "Follow"
+  },
+  "meta": {
+    "siteTitle": "ADido — 헤어 & 메이크업 살롱",
+    "siteDescription": "헤어 & 메이크업 살롱 ADido. 섬세하고 설계된 손끝에서 펼쳐지는 세련된 디자인."
+  }
+}

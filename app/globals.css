@@ -1,0 +1,231 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  /* Brand palette — magazine editorial */
+  --color-paper: #fafaf7;
+  --color-ink: #0a0a0a;
+  --color-card: #f1eee8;
+  --color-text: #1a1a1a;
+  --color-muted: #6b6b6b;
+  --color-rule: #d9d5cc;
+  --color-accent: #c9a97a;
+  --color-accent-dark: #b8965a;
+
+  /* Type families */
+  --font-display: var(--font-display), "Cormorant Garamond", "Times New Roman", serif;
+  --font-sans: var(--font-sans-en), var(--font-sans-ko), -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  --font-serif: var(--font-display), "Cormorant Garamond", "Times New Roman", serif;
+
+  /* Container */
+  --breakpoint-3xl: 1600px;
+}
+
+:root {
+  color-scheme: light;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "ss02", "kern";
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Avoid awkward Korean word-breaks inside narrow columns */
+  :lang(ko) {
+    word-break: keep-all;
+    line-break: strict;
+  }
+
+  ::selection {
+    background-color: var(--color-ink);
+    color: var(--color-paper);
+  }
+
+  /* Editorial focus ring */
+  :focus-visible {
+    outline: 2px solid var(--color-ink);
+    outline-offset: 4px;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    color: var(--color-ink);
+  }
+}
+
+@layer components {
+  /* Magazine container with side gutters */
+  .container-mag {
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+    max-width: 1280px;
+  }
+  @media (min-width: 1024px) {
+    .container-mag {
+      padding-inline: 3rem;
+    }
+  }
+
+  /* Tiny uppercase eyebrow */
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--color-muted);
+  }
+
+  /* Hairline rule */
+  .rule {
+    border-color: var(--color-rule);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* =====================================================================
+ * Custom utilities — kept outside @layer so Tailwind 4 doesn't strip
+ * them as unused.  Order matters: declared after Tailwind output so
+ * these definitions win over conflicting utility classes.
+ * ===================================================================*/
+
+/* Hero wordmark — fluid display size */
+.hero-wordmark {
+  font-family: var(--font-display);
+  font-size: clamp(2.75rem, 6.5vw, 6.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+  font-weight: 500;
+}
+
+/* Wordmark — capitals A · DI · DO highlighted in distinct vivid golds,
+ * non-caps dimmed.  Caps also slightly larger so they tower above the
+ * lowercase letters.
+ */
+.wordmark-dim {
+  color: var(--color-paper);
+  opacity: 0.18;
+  font-weight: 300;
+}
+.wordmark-cap {
+  font-weight: 700;
+  font-size: 1.18em;
+  letter-spacing: -0.02em;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.35);
+}
+.wordmark-cap--a  { color: #ffd24a; }   /* A — bright gold */
+.wordmark-cap--di { color: #f5a623; }   /* DI — deep gold */
+.wordmark-cap--do { color: #ec7a1c; }   /* DO — warm amber */
+
+/* Framed gallery marquee */
+@keyframes marquee-rtl {
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(-50%, 0, 0); }
+}
+.marquee-viewport {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-block: 1.25rem;
+}
+.marquee-fade {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4rem;
+  z-index: 10;
+  pointer-events: none;
+}
+.marquee-fade--left {
+  left: 0;
+  background: linear-gradient(to right, var(--color-card), transparent);
+}
+.marquee-fade--right {
+  right: 0;
+  background: linear-gradient(to left, var(--color-card), transparent);
+}
+@media (min-width: 768px) {
+  .marquee-fade { width: 8rem; }
+}
+.marquee-track {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  animation-name: marquee-rtl;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+@media (min-width: 768px) {
+  .marquee-track { gap: 3rem; }
+}
+.marquee-item {
+  flex: 0 0 auto;
+  width: 240px;
+}
+@media (min-width: 768px) {
+  .marquee-item { width: 300px; }
+}
+@media (min-width: 1280px) {
+  .marquee-item { width: 340px; }
+}
+
+/* Museum frame — black molding + ivory matte */
+.frame-art {
+  padding: 14px;
+  background: #f7f3ea;
+  border: 10px solid #111;
+  box-shadow:
+    inset 0 1px 0 rgba(0, 0, 0, 0.15),
+    0 12px 28px -16px rgba(0, 0, 0, 0.45),
+    0 4px 10px -6px rgba(0, 0, 0, 0.25);
+}
+@media (min-width: 768px) {
+  .frame-art {
+    padding: 20px;
+    border-width: 12px;
+  }
+}
+.frame-art__inner {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: var(--color-card);
+}

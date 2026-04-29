@@ -1,0 +1,118 @@
+{
+  "nav": {
+    "about": "About",
+    "prices": "Price",
+    "designers": "Designers",
+    "gallery": "Gallery",
+    "events": "Event",
+    "reviews": "Reviews",
+    "notice": "Notice",
+    "contact": "Visit"
+  },
+  "actions": {
+    "book": "Book Now",
+    "bookOnNaver": "Book Now",
+    "viewMore": "View more",
+    "readMore": "Read on",
+    "back": "Back",
+    "callNow": "Call us"
+  },
+  "home": {
+    "eyebrow": "Cheongdam · Hair & Make Up",
+    "heroTitle": "Artist DId. DO",
+    "heroLead": "ADido is a Cheongdam beauty salon — true to the heart we began with —\npursuing beauty, style and ease through an artist's eye.",
+    "introEyebrow": "About ADido",
+    "introTitle": "Artist DId. DO",
+    "introBody": "Take the capitals and you spell ADIDO. Faithful to the spirit we started with, we pursue beauty, style, and ease through an artist's eye. From a quiet corner of Cheongdam, we design a grain that quietly settles into your everyday.",
+    "signatureEyebrow": "Preview",
+    "signatureTitle": "ADido Gallery Preview",
+    "ctaEyebrow": "Visit",
+    "ctaTitle": "Let's open your\nnext page together.",
+    "ctaBody": "Reservations via Naver. Inquiries by phone or KakaoTalk."
+  },
+  "prices": {
+    "eyebrow": "Price",
+    "title": "Treatments & Price",
+    "lead": "Designs that read your grain rather than chase trends. All prices reflect the designer event rate.",
+    "featuredBadge": "Signature",
+    "inquireValue": "Inquire",
+    "ctaTitle": "Continue with the\ntreatment you want.",
+    "ctaBody": "Per-designer pricing is available on Naver Booking."
+  },
+  "designers": {
+    "eyebrow": "Stylists",
+    "title": "Designers",
+    "lead": "Sixteen hands searching for the design that quietly suits your everyday.",
+    "bookCta": "Book",
+    "instagramCta": "Instagram",
+    "backToList": "All designers",
+    "groups": {
+      "Executive Director": "Executive Director",
+      "Senior Director": "Senior Director",
+      "Director": "Director",
+      "Director · Makeup": "Director · Makeup",
+      "Manager": "Manager",
+      "Designer": "Designer"
+    }
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "To you, who came to ADido in trust.",
+    "lead": "ADido finds the style that suits you best, and offers you a design that lets you shine.",
+    "section1Title": "les grands trans-parents",
+    "section1Body": "True to its name — a large transparency — we analyze the most composed form without clouding your natural grain. From the studio lighting, to the breath you take as you settle into the chair, to the way you appear when you step out onto the street — within the small space of the salon, we design and apply every single step.",
+    "section2Title": "A thorough consultation, a striking change",
+    "section2Body": "Face and head shape, hair texture and density, the way you dress, the rhythm of your days. Each designer takes ample time to read you before the work begins. Then we propose a design made 'for you, and only you.'",
+    "section3Title": "Open your new page with us.",
+    "section3Body": "3F, JS Building, 421 Dosan-daero, Gangnam. At ADido — a composed interior that reads like a single painting — we open your next page together."
+  },
+  "gallery": {
+    "eyebrow": "Gallery",
+    "title": "Space & Work",
+    "lead": "The interior, and the day's work — in one frame."
+  },
+  "contact": {
+    "eyebrow": "Visit",
+    "title": "How to find us",
+    "lead": "421 Dosan-daero, JS Building, 3F. Easy access on foot or by valet.",
+    "addressLabel": "Address",
+    "phoneLabel": "Phone",
+    "hoursLabel": "Hours",
+    "bookLabel": "Book",
+    "naverMap": "Open in Naver Map"
+  },
+  "notice": {
+    "eyebrow": "Notice",
+    "title": "Notice",
+    "lead": "Holiday, event, and pricing updates land here.",
+    "empty": "No active notices at the moment."
+  },
+  "reviews": {
+    "eyebrow": "Reviews",
+    "title": "Reviews",
+    "lead": "Honest notes from the people who came in.",
+    "naverPlaceCta": "Read all reviews on Naver Place",
+    "instagramCta": "See on Instagram"
+  },
+  "common": {
+    "menu": "Menu",
+    "closeMenu": "Close menu",
+    "openMenu": "Open menu",
+    "skipToContent": "Skip to content",
+    "notFoundEyebrow": "404",
+    "notFoundTitle": "We couldn't find\nthe page you wanted.",
+    "notFoundBody": "Please double-check the URL, or go back to the main page.",
+    "backToHome": "Back home"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "address": "Address",
+    "phone": "Phone",
+    "hours": "Hours",
+    "follow": "Follow"
+  },
+  "meta": {
+    "siteTitle": "ADido — Hair & Make Up Salon",
+    "siteDescription": "An editorial-mood hair and makeup salon. Quiet design, decisive hands."
+  }
+}
