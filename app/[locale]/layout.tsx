@@ -45,13 +45,23 @@ export async function generateMetadata({
   });
   const ogImage = `/api/og?${ogParams.toString()}`;
 
+  // Pick the URL crawlers should fetch absolute assets from.
+  // Vercel injects VERCEL_PROJECT_PRODUCTION_URL with the stable production
+  // host (e.g. adido-foo.vercel.app); when a custom domain is added it switches
+  // to that domain automatically. Fall back to siteConfig.url for local dev.
+  const productionHost =
+    process.env.VERCEL_PROJECT_PRODUCTION_URL ?? siteConfig.url.replace(/^https?:\/\//, "");
+  const baseUrl = productionHost.startsWith("http")
+    ? productionHost
+    : `https://${productionHost}`;
+
   return {
     title: {
       default: t("siteTitle"),
       template: `%s — ${siteConfig.name}`,
     },
     description: t("siteDescription"),
-    metadataBase: new URL(siteConfig.url),
+    metadataBase: new URL(baseUrl),
     alternates: {
       canonical: `/${locale}`,
       languages: {

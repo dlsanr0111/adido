@@ -3,10 +3,16 @@ import { ImageResponse } from "next/og";
 export const runtime = "edge";
 
 export async function GET(request: Request) {
-  const { searchParams } = new URL(request.url);
-  const title = searchParams.get("title") ?? "ADido";
+  const { origin, searchParams } = new URL(request.url);
   const eyebrow = searchParams.get("eyebrow") ?? "Hair & Make Up · Seoul";
-  const subtitle = searchParams.get("subtitle") ?? "les grands trans-parents";
+
+  // Load the brand mark from /public so the OG card shows the actual logo
+  // instead of rendered text. ImageResponse runs on the edge, so the file
+  // must be fetched via an absolute URL (relative paths don't resolve there).
+  const logoBytes = await fetch(new URL("/images/logo-mark.jpg", origin)).then((r) =>
+    r.arrayBuffer()
+  );
+  const logoSrc = `data:image/jpeg;base64,${Buffer.from(logoBytes).toString("base64")}`;
 
   return new ImageResponse(
     (
@@ -26,40 +32,31 @@ export async function GET(request: Request) {
         <div
           style={{
             display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
+            justifyContent: "flex-end",
             fontSize: 22,
             letterSpacing: 4,
             textTransform: "uppercase",
             color: "rgba(250,250,247,0.65)",
           }}
         >
-          <span>ADido</span>
-          <span>{eyebrow}</span>
+          {eyebrow}
         </div>
 
-        <div style={{ display: "flex", flexDirection: "column", gap: 28 }}>
-          <div
-            style={{
-              fontSize: 30,
-              letterSpacing: 6,
-              textTransform: "uppercase",
-              color: "#C9A97A",
-            }}
-          >
-            {subtitle}
-          </div>
-          <div
-            style={{
-              fontSize: 110,
-              lineHeight: 1.02,
-              letterSpacing: -2,
-              color: "#FAFAF7",
-              maxWidth: 1080,
-            }}
-          >
-            {title}
-          </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={logoSrc}
+            alt="ADido"
+            width={520}
+            height={520}
+            style={{ objectFit: "contain" }}
+          />
         </div>
 
         <div
