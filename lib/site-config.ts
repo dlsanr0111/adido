@@ -6,24 +6,13 @@
 export const siteConfig = {
   name: "ADido",
   fullName: "ADido HAIR & MAKE UP",
-  slogan: {
-    ko: "les grands trans-parents",
-    en: "les grands trans-parents",
-  },
-  tagline: {
-    ko: "일상을 끌어올리는 손길",
-    en: "A touch that elevates your everyday",
-  },
   description: {
     ko: "ADido는 헤어와 메이크업을 매거진처럼 다루는 살롱입니다. 자연스러운 결과 안에 단단한 디자인을 담습니다.",
     en: "ADido treats hair and makeup with editorial precision. Quiet design, lasting impact.",
   },
-  /** Replace these with the real values when provided */
   contact: {
     phone: "02-517-9591",
-    phoneIntl: "+82-2-517-9591",
     email: "hello@adido.kr",
-    kakao: "https://pf.kakao.com/_xxxxx",
   },
   address: {
     ko: "서울 강남구 도산대로 421 JS빌딩 3층",

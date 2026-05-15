@@ -1,4 +1,4 @@
-// Auto-generated from Naver Place 1209499953 — re-run scripts/scrape-designers.py if data needs refresh.
+// Source: Naver Place 1209499953
 export type Designer = {
   slug: string;
   nameKo: string;

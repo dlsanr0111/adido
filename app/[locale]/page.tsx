@@ -16,7 +16,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
   const signatureImages = Array.from({ length: 8 }, (_, i) => {
     const num = String(i + 1).padStart(2, "0");
-    return { src: `/images/design/design-${num}.png`, alt: t("signatureTitle") };
+    return { src: `/images/signature/signature-${num}.png`, alt: t("signatureTitle") };
   });
 
   return (
