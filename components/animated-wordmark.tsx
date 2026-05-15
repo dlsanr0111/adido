@@ -3,31 +3,29 @@
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-type Phase = "intro" | "collapse" | "lowerize";
+type Phase = "intro" | "collapse";
 
 type Token =
-  | { kind: "cap"; id: string; upper: string; lower: string; tone: "a" | "di" | "do" }
+  | { kind: "cap"; id: string; char: string; tone: "a" | "di" | "do" }
   | { kind: "dim"; id: string; text: string };
 
 const TOKENS: Token[] = [
-  { kind: "cap", id: "A",     upper: "A", lower: "A", tone: "a"  },
+  { kind: "cap", id: "A",     char: "A", tone: "a"  },
   { kind: "dim", id: "rtist", text: "rtist" },
-  { kind: "dim", id: "sp1",   text: " " },
-  { kind: "cap", id: "D1",    upper: "D", lower: "D", tone: "di" },
-  { kind: "cap", id: "I",     upper: "I", lower: "i", tone: "di" },
+  { kind: "dim", id: "sp1",   text: " " },
+  { kind: "cap", id: "D1",    char: "D", tone: "di" },
+  { kind: "cap", id: "I",     char: "I", tone: "di" },
   { kind: "dim", id: "ddot",  text: "d." },
-  { kind: "dim", id: "sp2",   text: " " },
-  { kind: "cap", id: "D2",    upper: "D", lower: "d", tone: "do" },
-  { kind: "cap", id: "O",     upper: "O", lower: "o", tone: "do" },
+  { kind: "dim", id: "sp2",   text: " " },
+  { kind: "cap", id: "D2",    char: "D", tone: "do" },
+  { kind: "cap", id: "O",     char: "O", tone: "do" },
 ];
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
 const SCHEDULE: { phase: Phase; hold: number }[] = [
   { phase: "intro",    hold: 3000 },
-  { phase: "collapse", hold: 1100 },
-  { phase: "lowerize", hold: 5000 },
-  { phase: "collapse", hold: 1100 },
+  { phase: "collapse", hold: 2500 },
 ];
 
 export function AnimatedWordmark() {
@@ -36,7 +34,7 @@ export function AnimatedWordmark() {
 
   useEffect(() => {
     if (reduce) {
-      setPhase("lowerize");
+      setPhase("collapse");
       return;
     }
     let i = 0;
@@ -53,7 +51,6 @@ export function AnimatedWordmark() {
   }, [reduce]);
 
   const showDim = phase === "intro";
-  const showLower = phase === "lowerize";
 
   return (
     <span aria-label="ADido" className="inline-flex flex-wrap items-baseline">
@@ -82,29 +79,9 @@ export function AnimatedWordmark() {
               key={tok.id}
               layout
               transition={{ layout: { duration: 0.85, ease: EASE } }}
-              className={`wordmark-cap wordmark-cap--${tok.tone} relative inline-block`}
+              className={`wordmark-cap wordmark-cap--${tok.tone} inline-block`}
             >
-              <span aria-hidden className="invisible">
-                {showLower ? tok.lower : tok.upper}
-              </span>
-              <motion.span
-                aria-hidden
-                initial={false}
-                animate={{ opacity: showLower ? 0 : 1 }}
-                transition={{ duration: 0.4 }}
-                className="absolute inset-x-0 bottom-0 leading-[inherit]"
-              >
-                {tok.upper}
-              </motion.span>
-              <motion.span
-                aria-hidden
-                initial={false}
-                animate={{ opacity: showLower ? 1 : 0 }}
-                transition={{ duration: 0.4 }}
-                className="absolute inset-x-0 bottom-0 leading-[inherit]"
-              >
-                {tok.lower}
-              </motion.span>
+              {tok.char}
             </motion.span>
           );
         })}
